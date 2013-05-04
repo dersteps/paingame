@@ -8,7 +8,6 @@ import com.pi4j.io.gpio.PinPullResistance;
 import com.pi4j.io.gpio.PinState;
 import com.pi4j.io.gpio.RaspiPin;
 import de.zombielabs.paingame.games.Game;
-import de.zombielabs.paingame.games.GameListener;
 import de.zombielabs.paingame.games.GameMode;
 import de.zombielabs.paingame.games.Shocky;
 import gnu.getopt.Getopt;
@@ -17,7 +16,6 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map.Entry;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -189,5 +187,8 @@ public class Paingame {
         }
 
         controller.play(game);
+        
+        // Reaching this means: end the game
+        GpioFactory.getInstance().shutdown();
     }
 }
