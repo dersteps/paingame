@@ -11,6 +11,11 @@ The project is composed of two main components: the software (which you are look
 Requirements
 ====
 The Pain Game requires a [Raspberry Pi](http://www.raspberrypi.org) (use Debian "wheezy", Raspian won't work) with Oracle's JDK 7u10 running on it. It uses [pi4j](https://github.com/Pi4J/pi4j/) to communicate with the RasPi.
+This will most likely not run on your PC! Clean-Build on your machine, then SCP the generated ZIP to your RasPi, unzip and execute it (sudo java -jar paingame.jar ...). Have fun.
+
+Setting up Debian Wheezy on a Raspberry Pi: [here](http://dersteps.wordpress.com/2013/05/04/setting-up-a-raspberry-pi-with-debian-wheezy/)
+Installing Oracle's JDK 7u10 on a Raspberry Pi: [here](http://dersteps.wordpress.com/2013/05/03/oracle-jdk-7u10-on-raspberry-pi/)
+
 
 Can I...?
 ===
